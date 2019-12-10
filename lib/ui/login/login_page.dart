@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_unipark_client/bloc/movies_detail_bloc.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -143,6 +144,7 @@ class _LoginPageState extends State<LoginPage> {
     setState(() {
       _isLoading = true;
       if (_formKey.currentState.validate()) {
+        movieDetailBloc.fetchMovieDetail();
         Navigator.pushReplacementNamed(context, '/main');
       }
     });

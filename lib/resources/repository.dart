@@ -4,7 +4,7 @@ import 'package:flutter_unipark_client/model/item_model.dart';
 import 'package:flutter_unipark_client/model/movie_detail_model.dart';
 import 'package:flutter_unipark_client/model/movie_image_model.dart';
 
-import 'movie_api_provider.dart';
+import 'api_provider.dart';
 
 class Repository {
   final moviesApiProvider = MovieApiProvider();
